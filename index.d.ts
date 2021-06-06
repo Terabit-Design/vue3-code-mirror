@@ -4,7 +4,7 @@ import 'codemirror/addon/fold/foldgutter';
 import 'codemirror/addon/fold/foldgutter.css';
 import 'codemirror/mode/javascript/javascript';
 import 'codemirror/lib/codemirror.css';
-import 'codemirror/theme/dracula.css';
+import 'codemirror/theme/monokai.css';
 import ResizeObserver from 'resize-observer-polyfill';
 import { VueComponentBase } from 'vue3-component-base';
 /** 代码编辑组件 */

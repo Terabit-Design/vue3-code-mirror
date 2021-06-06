@@ -5,8 +5,8 @@
   "main": "index.js",
   "module": "index.js",
   "types": "index.d.ts",
-  "repository": "git@github.com:CarterLi/vue3-code-mirror.git",
-  "author": "李通洲 <carter.li@eoitek.com>",
+  "repository": "git@github.com:Terabit-Design/vue3-code-mirror.git",
+  "author": "Vinay Pillai <vinay@terabitdesign.com>",
   "license": "MIT",
   "scripts": {
     "build": "tsc -d -p ."

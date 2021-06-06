@@ -4,7 +4,7 @@ import 'codemirror/addon/fold/foldgutter';
 import 'codemirror/addon/fold/foldgutter.css';
 import 'codemirror/mode/javascript/javascript';
 import 'codemirror/lib/codemirror.css';
-import 'codemirror/theme/dracula.css';
+import 'codemirror/theme/monokai.css';
 
 import { capitalize, h, markRaw } from 'vue';
 import ResizeObserver from 'resize-observer-polyfill';
@@ -57,7 +57,7 @@ export class VCodeMirror extends VueComponentBase {
     const editor = this.editor = markRaw(CodeMirror(this.$el, {
       value: this.value,
       mode: this.mode,
-      theme: $theme.get() === 'white' ? 'default' : 'dracula',
+      theme: $theme.get() === 'white' ? 'default' : 'monokai',
       readOnly: this.readonly,
       lineWrapping: this.wrap,
       lineNumbers: true,
@@ -77,7 +77,7 @@ export class VCodeMirror extends VueComponentBase {
       }
     });
     this.cleanEvent = markRaw($theme.onchange(({ detail }) => {
-      this.editor.setOption('theme', detail === 'white' ? 'default' : 'dracula');
+      this.editor.setOption('theme', detail === 'white' ? 'default' : 'monokai');
     }));
     this.backupValue = this.value;
     this.$el._component = this;
